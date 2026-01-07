@@ -29,11 +29,16 @@
                 <button type="button" class="btn position-relative">
                     <i class="fa fa-search"></i>
                 </button>
+                <!-- Di dalam <div class="nav-btns"> -->
+                <button type="button" class="btn position-relative" id="dark-mode-toggle">
+    <i class="fas fa-moon" id="dark-mode-icon"></i>
+                </button>
             </div>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
 
             <div class="collapse navbar-collapse order-lg-1" id="navMenu">
                 <ul class="navbar-nav mx-auto text-center">
@@ -190,6 +195,7 @@
     <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/darkmode.js"></script>
     <script>
         // Update cart count in navbar (jika diperlukan, meski about tidak punya add to cart)
         function updateCartCount() {

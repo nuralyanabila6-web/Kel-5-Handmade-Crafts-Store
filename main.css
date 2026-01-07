@@ -56,6 +56,93 @@ body {
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
 
+/* Variabel warna untuk light mode (default) */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --navbar-bg: #ffffff;
+    --navbar-text: #000000;
+    --header-bg: rgba(0, 0, 0, 0.5); /* Sesuaikan dengan background header */
+    --card-bg: #f8f9fa;
+    --btn-primary: #007bff;
+    --btn-primary-hover: #0056b3;
+    --footer-bg: #343a40;
+    --footer-text: #ffffff;
+    --muted-text: #6c757d;
+}
+
+/* Variabel warna untuk dark mode */
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --navbar-bg: #1e1e1e;
+    --navbar-text: #ffffff;
+    --header-bg: rgba(0, 0, 0, 0.8);
+    --card-bg: #1e1e1e;
+    --btn-primary: #bb86fc;
+    --btn-primary-hover: #9d4edd;
+    --footer-bg: #1e1e1e;
+    --footer-text: #ffffff;
+    --muted-text: #b0b0b0;
+}
+
+/* Terapkan variabel ke body dan elemen utama */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    background-color: var(--navbar-bg) !important;
+    color: var(--navbar-text) !important;
+}
+
+.navbar .nav-link {
+    color: var(--navbar-text) !important;
+}
+
+.navbar-brand {
+    color: var(--navbar-text) !important;
+}
+
+#header {
+    background-color: var(--header-bg);
+}
+
+.collection-img, .special-img {
+    background-color: var(--card-bg);
+}
+
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.btn-primary {
+    background-color: var(--btn-primary);
+    border-color: var(--btn-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-primary-hover);
+    border-color: var(--btn-primary-hover);
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+}
+
+.text-muted {
+    color: var(--muted-text) !important;
+}
+
+/* Tambahkan transisi halus untuk semua elemen */
+* {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
 #header {
   background: url(/img/heros.jpg) top/cover no-repeat;
 }
