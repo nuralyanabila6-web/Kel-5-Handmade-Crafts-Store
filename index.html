@@ -92,6 +92,21 @@
                 display: block;
             }
         }
+
+        /* Dark mode toggle button */
+        #theme-toggle {
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 999px;
+            width: 38px;
+            height: 38px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        html.theme-dark #theme-toggle {
+    border-color: rgba(255, 255, 255, 0.25);
+}
     </style>
 </head>
 
@@ -115,6 +130,9 @@
                 </button>
                 <button type="button" class="btn position-relative">
                     <i class="fa fa-search"></i>
+                </button>
+                <button id="theme-toggle" type="button" class="btn position-relative" aria-label="Toggle dark mode">
+                    <i id="theme-icon" class="fas fa-moon"></i>
                 </button>
             </div>
 
@@ -363,7 +381,8 @@
                     <div class="special-img position-relative overflow-hidden"
                         onclick="window.location.href='knittingsupplies.html'">
                         <img src="img/kt1.jpg" class="w-100 img-fluid" alt="Knitting Supplies">
-                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
                             <i class="fas fa-heart"></i>
                         </span>
                     </div>
@@ -379,7 +398,8 @@
                     <div class="special-img position-relative overflow-hidden"
                         onclick="window.location.href='beadingsupplies.html'">
                         <img src="img/bs1.jpg" class="w-100 img-fluid" alt="Beading Supplies">
-                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
                             <i class="fas fa-heart"></i>
                         </span>
                     </div>
@@ -395,7 +415,8 @@
                     <div class="special-img position-relative overflow-hidden"
                         onclick="window.location.href='claycraftsupplies.html'">
                         <img src="img/cl1.jpg" class="w-100 img-fluid" alt="Clay Craft Supplies">
-                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
                             <i class="fas fa-heart"></i>
                         </span>
                     </div>
@@ -410,7 +431,8 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="special-img position-relative overflow-hidden">
                         <img src="img/js1.jpg" class="w-100 img-fluid" alt="Jewelry Making Supplies">
-                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
                             <i class="fas fa-heart"></i>
                         </span>
                     </div>
@@ -427,7 +449,8 @@
 
     <section id="offers" class="py-5">
         <div class="container">
-            <div class="row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+            <div
+                class="row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
                 <div class="offers-content">
                     <span class="text-black">Discount Up To 40%</span>
                     <h2 class="mt-2 mb-4 text-black">Grand Sale Offer!</h2>
@@ -448,7 +471,8 @@
                     <img src="img/blog6.jpg" alt="" class="img-fluid">
                     <div class="card-body px-0">
                         <h4 class="card-title">Crafted with Intention, Wrapped in Love</h4>
-                        <p class="card-text mt-3 text-muted">Discover why handmade gifts carry a deeper connection than anything mass produced</p>
+                        <p class="card-text mt-3 text-muted">Discover why handmade gifts carry a deeper connection than
+                            anything mass produced</p>
                         <p class="card-text">
                             <small class="text-muted">
                                 <span class="fw-bold">Author: </span>Dara
@@ -462,7 +486,8 @@
                     <img src="img/blog1.jpg" alt="" class="img-fluid">
                     <div class="card-body px-0">
                         <h4 class="card-title">Where Imagination Meets Artistry</h4>
-                        <p class="card-text mt-3 text-muted">A look inside our studio: How we turn simple materials into whimsical treasures.</p>
+                        <p class="card-text mt-3 text-muted">A look inside our studio: How we turn simple materials into
+                            whimsical treasures.</p>
                         <p class="card-text">
                             <small class="text-muted">
                                 <span class="fw-bold">Author: </span>Afra & Nofal
@@ -476,7 +501,8 @@
                     <img src="img/blog5.jpg" alt="" class="img-fluid">
                     <div class="card-body px-0">
                         <h4 class="card-title">The Poetry of the Everyday.</h4>
-                        <p class="card-text mt-3 text-muted">Elevate your daily rituals with artisan pieces designed for the modern dreamer.</p>
+                        <p class="card-text mt-3 text-muted">Elevate your daily rituals with artisan pieces designed for
+                            the modern dreamer.</p>
                         <p class="card-text">
                             <small class="text-muted">
                                 <span class="fw-bold">Author: </span>Nabila
@@ -497,7 +523,10 @@
                         <h2 class="position-relative d-inline-block ms-4">About Us</h2>
                     </div>
                     <p class="lead text-muted">Atelier Kriya</p>
-                    <p>At Atelier Kriya, we believe that every handmade piece carries a fragment of its creator’s soul. Born from a love for detail and the beauty of craft, we offer collections specifically designed to accompany your cherished moments. Each of our creations is a blend of imagination, patience, and sincere love.</p>
+                    <p>At Atelier Kriya, we believe that every handmade piece carries a fragment of its creator’s soul.
+                        Born from a love for detail and the beauty of craft, we offer collections specifically designed
+                        to accompany your cherished moments. Each of our creations is a blend of imagination, patience,
+                        and sincere love.</p>
                 </div>
                 <div class="col-lg-6 order-lg-0 mb-5 text-center">
                     <img src="img/body.jpeg" alt="" class="img-fluid">
@@ -601,13 +630,17 @@
                     <div class="title pt-3 pb-4">
                         <h2 class="position-relative d-inline-block">Newsletter Subscription</h2>
                     </div>
-                    <p class="text-muted mb-4">Stay connected with Atelier Kriya! Subscribe to our newsletter and be the first to know about our latest handmade crafts, exclusive offers, special promotions, and behind-the-scenes stories from our artisans. Join our community of craft lovers and never miss a beat.</p>
+                    <p class="text-muted mb-4">Stay connected with Atelier Kriya! Subscribe to our newsletter and be the
+                        first to know about our latest handmade crafts, exclusive offers, special promotions, and
+                        behind-the-scenes stories from our artisans. Join our community of craft lovers and never miss a
+                        beat.</p>
                     <form id="newsletter-form">
                         <div class="input-group mb-3">
                             <input type="email" class="form-control" placeholder="Enter Your Email ..." required>
                             <button class="btn btn-primary" type="submit">Subscribe</button>
                         </div>
-                        <small class="text-muted">We respect your privacy and will never share your email with third parties.</small>
+                        <small class="text-muted">We respect your privacy and will never share your email with third
+                            parties.</small>
                     </form>
                     <div id="success-message" class="alert alert-success mt-3" style="display: none;">
                         Thank you for subscribing! Check your email for confirmation.
@@ -622,7 +655,8 @@
             <div class="row text-white g-4">
                 <div class="col-md-6 col-lg-3">
                     <a class="text-uppercase text-decoration-none brand text-white" href="index.html">Atelier Kriya</a>
-                    <p class="text-white text-muted mt-3">A sanctuary for handmade crafts that brings a touch of magic to your everyday life. Each piece is heart wrought for the modern dreamer.</p>
+                    <p class="text-white text-muted mt-3">A sanctuary for handmade crafts that brings a touch of magic
+                        to your everyday life. Each piece is heart wrought for the modern dreamer.</p>
                 </div>
 
                 <div class="col-md-6 col-lg-3">
@@ -733,13 +767,46 @@
                     addToCart(name, price, image);
                 });
             });
-            updateCartCount(); 
+            updateCartCount();
         });
         document.getElementById('newsletter-form').addEventListener('submit', function (e) {
             e.preventDefault();
             document.getElementById('success-message').style.display = 'block';
             this.reset();
         });
+
+const THEME_KEY = 'theme';
+
+function applyTheme(theme) {
+    const root = document.documentElement; // <html>
+    root.classList.remove('theme-dark', 'theme-light');
+
+    if (theme === 'dark') root.classList.add('theme-dark');
+    else root.classList.add('theme-light');
+
+    const icon = document.getElementById('theme-icon');
+    if (icon) icon.className = (theme === 'dark') ? 'fas fa-sun' : 'fas fa-moon';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    let saved = localStorage.getItem(THEME_KEY);
+
+    if (saved !== 'dark' && saved !== 'light') saved = 'light';
+
+    applyTheme(saved);
+
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            const current = document.documentElement.classList.contains('theme-dark') ? 'dark' : 'light';
+            const next = (current === 'dark') ? 'light' : 'dark';
+            localStorage.setItem(THEME_KEY, next);
+            applyTheme(next);
+        });
+    }
+});
+
+
     </script>
 </body>
 
