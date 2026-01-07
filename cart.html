@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Atelier Kriya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="img/logo.jpeg" alt="site icon">
+                <span class="text-uppercase fw-lighter ms-2">Atelier Kriya</span>
+            </a>
+
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative" onclick="window.location.href='cart.html'">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge bg-primary">0</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark, active" href="shop.html">shop</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="special.html">specials</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="blog.html">blogs</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="abtus.html">about us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="popular.html">popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- cart -->
+    <section id="cart" class="py-5" style="padding-top: 104px;">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Shopping Cart</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div id="cart-items" class="mb-4">
+                        <!-- Items will be loaded here via JavaScript -->
+                        <p class="text-center text-muted">Your cart is empty.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Cart Summary</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal</span>
+                                <span id="subtotal">0</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Shipping</span>
+                                <span id="shipping">0</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Tax</span>
+                                <span id="tax">0</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between fw-bold">
+                                <span>Total</span>
+                                <span id="total">0</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="checkout.html" class="btn btn-primary w-100">Proceed to Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of cart -->
+
+    <!-- footer -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html">Atelier Kriya</a>
+                    <p class="text-white text-muted mt-3">A sanctuary for handmade crafts that brings a touch of magic to your everyday life. Each piece is heart wrought for the modern dreamer.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Shop
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Blogs
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            123 Handmade St, Craft City, Artland
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            info@atelierkriya.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +123 456 7890
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Load cart items from localStorage
+        function loadCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartItems = document.getElementById('cart-items');
+            let subtotal = 0;
+            cartItems.innerHTML = '';
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p class="text-center text-muted">Your cart is empty.</p>';
+            } else {
+                cart.forEach((item, index) => {
+                    let itemTotal = item.price * item.quantity;
+                    subtotal += itemTotal;
+                    cartItems.innerHTML += `
+                        <div class="card mb-3">
+                            <div class="card-body d-flex align-items-center">
+                                <img src="${item.image}" alt="${item.name}" class="img-fluid me-3" style="width: 80px;">
+                                <div class="flex-grow-1">
+                                    <h6>${item.name}</h6>
+                                    <p class="mb-1">${item.price}</p>
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity(${index}, -1)">-</button>
+                                        <span class="mx-2">${item.quantity}</span>
+                                        <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity(${index}, 1)">+</button>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <p class="mb-1 fw-bold">${itemTotal}</p>
+                                    <button class="btn btn-sm btn-danger" onclick="removeItem(${index})">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+
+            updateSummary(subtotal);
+            updateCartCount();
+        }
+
+        // Update quantity
+        function updateQuantity(index, change) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart[index].quantity += change;
+            if (cart[index].quantity <= 0) {
+                cart.splice(index, 1);
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart();
+        }
+
+        // Remove item
+        function removeItem(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart();
+        }
+
+        // Update summary
+        function updateSummary(subtotal) {
+            let shipping = subtotal > 0 ? 10000 : 0; // Example shipping
+            let tax = subtotal * 0.1; // 10% tax
+            let total = subtotal + shipping + tax;
+
+            document.getElementById('subtotal').textContent = subtotal;
+            document.getElementById('shipping').textContent = shipping;
+            document.getElementById('tax').textContent = tax.toFixed(0);
+            document.getElementById('total').textContent = total.toFixed(0);
+        }
+
+        // Update cart count in navbar
+        function updateCartCount() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let count = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cart-count').textContent = count;
+        }
+
+        // Load cart on page load
+        window.onload = loadCart;
+    </script>
+</body>
+</html>

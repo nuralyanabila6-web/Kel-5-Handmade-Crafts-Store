@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Kriya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="img/logo.jpeg" alt="site icon">
+                <span class="text-uppercase fw-lighter ms-2">Atelier Kriya</span>
+            </a>
+
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative" onclick="window.location.href='cart.html'">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge bg-primary">0</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark, active" href="shop.html">shop</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="special.html">specials</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="blog.html">blogs</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="abtus.html">about us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="popular.html">popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Handmade with love</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">Unique for you</h1>
+                <a href="cart.html" class="btn mt-3 text-uppercase">shop now</a>  <!-- Diperbaiki: cekout.html -> checkout.html -->
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Discover the beauty of handmade crafts that add a touch of elegance to your life</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">Crafted Elegance</h1>
+                <a href="cart.html" class="btn mt-3 text-uppercase">buy now</a>  <!-- Diperbaiki: cekout.html -> checkout.html -->
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- end of header -->
+
+    <!-- collection -->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">Collection</h2>
+            </div>
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative" onclick="window.location.href='bracelet.html'">
+                            <img src="img/g1.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Beads Bracelet</p>
+                            <span class="fw-bold">20.000</span>
+                            <i class="fas fa-shopping-cart add-to-cart" data-name="Beads Bracelet" data-price="20000" data-image="img/g1.jpg"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative" onclick="window.location.href='floral.html'"> <!-- Menambahkan onclick untuk navigasi ke halaman floral.html -->
+                            <img src="IMG/fw1.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Floral Wire Craft</p>
+                            <span class="fw-bold">70.000</span>
+                            <i class="fas fa-shopping-cart add-to-cart" data-name="Floral Wire Craft" data-price="70000" data-image="IMG/fw1.jpg"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative" onclick="window.location.href='knittedbag.html'"> <!-- Menambahkan onclick untuk navigasi ke halaman knittedbag.html -->
+                            <img src="IMG/ts1.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Knitted Bag</p>
+                            <span class="fw-bold">120.000</span>
+                            <i class="fas fa-shopping-cart add-to-cart" data-name="Knitted Bag" data-price="120000" data-image="IMG/ts1.jpg"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative" onclick="window.location.href='strapphone.html'"> <!-- Menambahkan onclick untuk navigasi ke halaman strapphone.html -->
+                            <img src="IMG/s1.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Strap phone</p>
+                            <span class="fw-bold">25.000</span>
+                            <i class="fas fa-shopping-cart add-to-cart" data-name="Strap phone" data-price="25000" data-image="IMG/s1.jpg"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative" onclick="window.location.href='beadsring.html'">
+                            <img src="IMG/c1.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Beads Ring</p>
+                            <span class="fw-bold">10.000</span>
+                            <i class="fas fa-shopping-cart add-to-cart" data-name="Beads Ring" data-price="10000" data-image="IMG/c1.jpg"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative" onclick="window.location.href='beadsnecklace.html'">
+                            <img src="IMG/k1.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Beads Necklace</p>
+                            <span class="fw-bold">35.000</span>
+                            <i class="fas fa-shopping-cart add-to-cart" data-name="Beads Necklace" data-price="35000" data-image="IMG/k1.jpg"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative" onclick="window.location.href='knittedhairclip.html'">
+                            <img src="IMG/khc1.jpg" class="w-100">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Knitted Hair Clip</p>
+                            <span class="fw-bold">12.000</span>
+                            <i class="fas fa-shopping-cart add-to-cart" data-name="Knitted Hair Clip" data-price="12000" data-image="IMG/khc1.jpg"></i>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative" onclick="window.location.href='knitteddoll.html'">
+                            <img src = "IMG/b1.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Knitted Doll</p>
+                            <span class = "fw-bold">200.000</span>
+                            <i class="fas fa-shopping-cart add-to-cart" data-name="Knitted Doll" data-price="200000" data-image="IMG/b1.jpg"></i>
+                        </div>
+                    </div>
+
+    <!-- Bundling products -->
+    <section id = "special" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Pure Bundling</h2>
+            </div>
+
+            <div class = "special-list row g-0">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden" onclick="window.location.href='knittingsupplies.html'">
+                        <img src = "IMG/kt1.jpg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Knitting Supplies</p>
+                        <span class = "fw-bold d-block">160.000</span>
+                        <a href="#" class="btn btn-primary mt-3 add-to-cart" data-name="Knitting Supplies" data-price="160000" data-image="IMG/kt1.jpg">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden" onclick="window.location.href='beadingsupplies.html'">
+                        <img src = "IMG/bs1.jpg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Beading Supplies</p>
+                        <span class = "fw-bold d-block">400.000</span>
+                        <a href = "#" class = "btn btn-primary mt-3 add-to-cart" data-name="Beading Supplies" data-price="400000" data-image="IMG/bs1.jpg">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden" onclick="window.location.href='claycraftsupplies.html'">
+                        <img src = "IMG/cl1.jpg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Clay Craft Supplies</p>
+                        <span class = "fw-bold d-block">95.000</span>
+                        <a href = "#" class = "btn btn-primary mt-3 add-to-cart" data-name="Clay Craft Supplies" data-price="95000" data-image="IMG/cl1.jpg">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "IMG/js1.jpg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Jewelry Making Supplies</p>
+                        <span class = "fw-bold d-block">65.000</span>
+                        <a href = "#" class = "btn btn-primary mt-3 add-to-cart" data-name="Jewelry Making Supplies" data-price="65000" data-image="IMG/js1.jpg">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+
+    <!-- blogs -->
+    <section id = "offers" class = "py-5">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class = "offers-content">
+                    <span class = "text-black">Discount Up To 40%</span>
+                    <h2 class = "mt-2 mb-4 text-black">Grand Sale Offer!</h2>
+                    <a href = "#" class = "btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- blogs -->
+    <section id = "blogs" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
+            </div>
+
+            <div class = "row g-3">
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "IMG/blog6.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Crafted with Intention, Wrapped in Love</h4>
+                        <p class = "card-text mt-3 text-muted">Discover why handmade gifts carry a deeper connection than anything mass produced</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>Dara
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "IMG/blog1.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Where Imagination Meets Artistry</h4>
+                        <p class = "card-text mt-3 text-muted">A look inside our studio: How we turn simple materials into whimsical treasures.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>Afra & Nofal
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "img/blog5.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">The Poetry of the Everyday.</h4>
+                        <p class = "card-text mt-3 text-muted">Elevate your daily rituals with artisan pieces designed for the modern dreamer.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Author: </span>Nabila
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- about us -->
+    <section id = "about" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class = "lead text-muted">Atelier Kriya</p>
+                    <p>At Atelier Kriya, we believe that every handmade piece carries a fragment of its creator’s soul. Born from a love for detail and the beauty of craft, we offer collections specifically designed to accompany your cherished moments. Each of our creations is a blend of imagination, patience, and sincere love.</p>
+                </div>
+                <div class = "col-lg-6 order-lg-0 mb-5">
+                    <img src = "IMG/body.jpeg" alt = "" class = "img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+
+    <!-- popular -->
+    <section id = "popular" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Popular Of This Year</h2>
+            </div>
+
+            <div class = "row">
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Top Rated</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "IMG/tr1.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Knitted Photo Card Holder</p>
+                            <span>15.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "IMG/tr2.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Crocheted Keychain</p>
+                            <span>5.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "IMG/tr3.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Clay Photo Frame</p>
+                            <span>25.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Best Selling</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "IMG/bs1.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Knitted Hat</p>
+                            <span>55.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "IMG/bs2.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Knitted Mirror Case</p>
+                            <span>12.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "IMG/bs3.jpeg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Knitted Tumblr Case</p>
+                            <span>45.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">On Sale</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "img/os3.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Knitted Headband</p>
+                            <span>35.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "img/os2.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Knitted Pouch</p>
+                            <span>22.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "IMG/os1.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0"> Knitted Vest</p>
+                            <span>350.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of popular -->
+
+    <!-- newsletter -->
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="IMG/nw.jpg" alt="Newsletter Subscription" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block">Newsletter Subscription</h2>
+                    </div>
+                    <p class="text-muted mb-4">Stay connected with Atelier Kriya! Subscribe to our newsletter and be the first to know about our latest handmade crafts, exclusive offers, special promotions, and behind-the-scenes stories from our artisans. Join our community of craft lovers and never miss a beat.</p>
+                    <form id="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter Your Email ..." required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                        <small class="text-muted">We respect your privacy and will never share your email with third parties.</small>
+                    </form>
+                    <div id="success-message" class="alert alert-success mt-3" style="display: none;">
+                        Thank you for subscribing! Check your email for confirmation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of newsletter -->
+
+    <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Atelier Kriya</a>
+                    <p class = "text-white text-muted mt-3">A sanctuary for handmade crafts that brings a touch of magic to your everyday life. Each piece is heart wrought for the modern dreamer.</p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Shop
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Blogs
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            123 Handmade St, Craft City, Artland
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            info@atelierkriya.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +123 456 7890
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    // Function to add item to cart
+    function addToCart(name, price, image) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let existingItem = cart.find(item => item.name === name);
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({ name, price: parseInt(price), image, quantity: 1 });
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateCartCount();
+        alert(`${name} added to cart!`);
+    }
+
+    // Update cart count in navbar
+    function updateCartCount() {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let count = cart.reduce((sum, item) => sum + item.quantity, 0);
+        document.getElementById('cart-count').textContent = count;
+    }
+
+    // Attach event listeners to Add to Cart buttons
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const name = button.getAttribute('data-name');
+                const price = button.getAttribute('data-price');
+                const image = button.getAttribute('data-image');
+                addToCart(name, price, image);
+            });
+        });
+        updateCartCount(); // Load count on page load
+    });
+
+    // Newsletter form submission
+document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Simulate form submission (in a real app, send to server)
+    document.getElementById('success-message').style.display = 'block';
+    this.reset();
+});
+</script>
+</body>
+</html>
