@@ -1133,7 +1133,7 @@
   const SELECTOR_ACTIVE$1 = '.active';
   const SELECTOR_ACTIVE_ITEM = '.active.carousel-item';
   const SELECTOR_ITEM = '.carousel-item';
-  const SELECTOR_ITEM_IMG = '.carousel-item img';
+  const SELECTOR_ITEM_img = '.carousel-item img';
   const SELECTOR_NEXT_PREV = '.carousel-item-next, .carousel-item-prev';
   const SELECTOR_INDICATORS = '.carousel-indicators';
   const SELECTOR_INDICATOR = '[data-bs-target]';
@@ -1329,8 +1329,8 @@
         }
       };
 
-      SelectorEngine.find(SELECTOR_ITEM_IMG, this._element).forEach(itemImg => {
-        EventHandler.on(itemImg, EVENT_DRAG_START, e => e.preventDefault());
+      SelectorEngine.find(SELECTOR_ITEM_img, this._element).forEach(itemimg => {
+        EventHandler.on(itemimg, EVENT_DRAG_START, e => e.preventDefault());
       });
 
       if (this._pointerEvent) {
